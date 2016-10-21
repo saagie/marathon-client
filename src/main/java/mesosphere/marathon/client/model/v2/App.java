@@ -28,6 +28,8 @@ public class App {
 	private Integer instances;
 	private Double cpus;
 	private Double mem;
+	private Double disk;
+	private String user;
 	private Collection<String> uris;
 	private List<List<String>> constraints;
 	private Collection<String> acceptedResourceRoles;
@@ -99,6 +101,14 @@ public class App {
 	public void setMem(Double mem) {
 		this.mem = mem;
 	}
+
+	public Double getDisk() { return disk;	}
+
+	public void setDisk(Double disk) { 	this.disk = disk; }
+
+	public String getUser() { return user; }
+
+	public void setUser(String user) { 	this.user = user; }
 
 	public Collection<String> getUris() {
 		return uris;
